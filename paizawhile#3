@@ -1,0 +1,10 @@
+// whileによるループ処理(奇数のみ表示)
+public class Main {
+    public static void main(String[] args) {
+        int number = 19 ;
+        while(number >= 10 ){
+            System.out.println(number);
+            number = number - 2 ;
+        }
+    }
+}
