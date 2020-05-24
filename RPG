@@ -1,0 +1,14 @@
+// whileによる繰り返し処理3
+
+public class Main {
+    public static void main(String[] args) {
+        int hp = 30;    // カウンタ変数の初期化
+        int hit ;
+        while (hp >= 0) {
+            hit = (int)(Math.random()*10+1);
+            System.out.println("スライムに" +hit+ "のダメージを与えた！");    // 繰り返し処理
+            hp -= hit ;    // カウンタ変数の更新
+        }
+        System.out.println ("スライムを倒した！ " );
+    }
+}
