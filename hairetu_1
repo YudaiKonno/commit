@@ -1,0 +1,12 @@
+// 変数で、配列に代入する
+
+public class Main {
+    public static void main(String[] args) {
+        //配列変数は変数名のあとにカギカッコをいれて{}要素にはダブルクォーテーション
+        String player[] ={"勇者","魔法使い","戦士"} ;
+        // 配列を出力するときは[]に０から入れて出力。
+        System.out.println(player[0]);
+        System.out.println(player[1]);
+        System.out.println(player[2]);
+    }
+}
