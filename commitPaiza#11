@@ -2,16 +2,30 @@
 
 public class Main {
     public static void main(String[] args) {
+         
+         //定価を表示
         int price = 3500;
         System.out.println("定価：" + price + "円");
+        
+        //割引価格を表示
         int discountPrice = (int)(price * 0.85);
         System.out.println("割引価格は、" + discountPrice + "円です");
+        
+        //税込価格を表示
         int amount = (int)(discountPrice * 1.08) ;
         System.out.println("税込価格は、"+  amount +"円です");
+        
+        //ここから割り勘を計算
         int person = 5 ;
         System.out.println("人数が"+  person +"人の場合");
+        
+        //税込金額を人数で割る
         int amountperPerson = amount / person;
+        
+        //【％】で余を算出
         int remainder = amount % person;
+        
+        //一人当たりの支払い金額と余りを表示
         System.out.println("一人当たり"+ amountperPerson +"円、余りが"+ remainder +"です。");
 }
 }
