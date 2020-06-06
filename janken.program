@@ -1,0 +1,23 @@
+// じゃんけんプログラム
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        // 標準入力から1行取得
+        Scanner sc = new Scanner(System.in);
+        String janken = sc.nextLine();
+
+        // カンマで分割して、配列に代入
+        String[] toss = janken.split(",");
+        
+        //System.out.println(toss.length);
+        
+        // 配列の要素をランダムに選ぶ
+        double rand = Math.random()*toss.length;
+        int num = (int)(rand);
+        //System.out.println(num);
+
+        // ランダムに選んだ配列の要素を出力
+        System.out.println(toss[num]);        
+    }
+}
