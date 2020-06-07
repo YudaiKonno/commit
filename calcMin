@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n_1 = sc.nextInt();
+        int n_2 = sc.nextInt();
+        int n_3 = sc.nextInt();
+        int n_4 = sc.nextInt();
+        int n_5 = sc.nextInt();
+    
+        int [] array = {n_1,n_2,n_3,n_4,n_5};
+            int intMin = calcMin(array);
+
+        System.out.println(intMin);
+    }
+
+
+    public static int calcMin(int[] array) {
+
+        int intMin = array[0];
+
+        for (int i = 1; i < array.length; i++ ) {
+            if(intMin > array[i]) {
+                intMin = array[i];
+            }
+        }
+        return intMin;
+    }
+}
