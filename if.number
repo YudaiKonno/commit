@@ -1,0 +1,16 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        
+        if (num >= 5 && num <= 200000){
+        System.out.println("high");
+        } else if(num <= 4 && num >= -200000 ){
+        System.out.println("low");
+            
+        }
+    }
+}
