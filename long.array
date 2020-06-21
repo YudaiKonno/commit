@@ -1,0 +1,27 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int times = sc.nextInt();//標準入力された整数を
+        int sum = 0;//変数sumを用意
+        
+        for (int i= 0;i < times ; i++ ){//変数iがtimesよりも小さいかぎり
+            long[] team = new long[2];//
+            team[0] = sc.nextInt(); 
+            team[1] = sc.nextInt(); 
+        
+            if (team[0] != team[1]){
+                sum +=(team[0]+team[1]);
+            } else{
+                sum += (team[0]*team[1]);
+            }
+        }    
+        System.out.println(sum);
+        
+    }
+}
+
+
