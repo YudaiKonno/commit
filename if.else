@@ -1,0 +1,24 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int km = sc.nextInt();
+        int cm = sc.nextInt();
+        
+        int km1 = km*10000;
+        int num = km1/cm;
+        int num2 = num*10;
+        
+        //System.out.println(num2);
+      if (num2 >= 10000){
+        System.out.println("yes");
+            
+        } else{
+        System.out.println("no");
+            
+        }
+        
+    }
+}
