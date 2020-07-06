@@ -1,0 +1,24 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int times = sc.nextInt();
+        long sum = 0;
+        
+        for (int i = 0;i < times ;i++ ){
+           long tmp[] = new long[2]; 
+           tmp[0] = sc.nextInt();
+           tmp[1] = sc.nextInt();
+        
+        if (tmp[0] != tmp[1]){
+            sum += (tmp[0]+tmp[1]);
+        } else{
+            sum += (tmp[0]*tmp[1]);
+        }
+    }
+        System.out.println(sum);
+}
+}
