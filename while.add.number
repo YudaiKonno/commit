@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+
+        while (scanner.hasNext()) { //scanner に入力がある間、sunに入力されたものを代入
+            sum += scanner.nextInt();
+        }
+
+        System.out.println(sum);
+
+        scanner.close(); //whileの処理の終了を忘れずに！！
+    }
+}
