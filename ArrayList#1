@@ -7,7 +7,7 @@ public class Main {
         weapon.add("木の棒");
         weapon.add("鉄の剣");
         weapon.add("サビた剣");
-        // ここに、要素を上書きするコードを記述する
+        //ここに、要素を上書きするコードを記述する
 
         for (String item : weapon) {
             System.out.println(item);
