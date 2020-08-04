@@ -1,0 +1,33 @@
+// 2次元配列を作成する
+
+public class Main {
+    public static void main(String[] args) {
+    String player = "盗賊";
+    String[]teamA = {player,"戦士","魔法使い"};
+    System.out.print(teamA[0] + ",");
+    System.out.print(teamA[1] + ",");
+    System.out.print(teamA[2]);
+    System.out.println("");
+    System.out.println("---");
+    
+    String[] teamB = {teamA[0],teamA[1],teamA[2]};
+    System.out.print(teamB[0] + ",");
+    System.out.print(teamB[1] + ",");
+    System.out.print(teamB[2]);
+    System.out.println("");
+    System.out.println("---");
+    
+    String[] teamC ={"勇者","戦士","魔法使い"};//ここが配列[0]
+    String[] teamD={"盗賊","忍者","商人"};//ここが配列[1]
+    String[] teamE ={"スライム","ドラゴン","魔王"};//ここが配列[2]
+    
+    String[][]teams = {teamC,teamD,teamE};
+    System.out.print(teams[0][0] + ",");//配列teamC[0]の[0]個目配列要素
+    System.out.print(teams[1][0] + ",");//配列teamD[1]の[0]個目配列要素
+    System.out.print(teams[2][2] + ",");//配列teamE[2]の[2]個目配列要素
+    System.out.print("");
+    System.out.print("---");
+    }
+
+    
+}
