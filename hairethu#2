@@ -1,0 +1,9 @@
+public class Main {
+  public static void main(String[] args) {
+    String[] str = {"Nara", "Shiga", "Hokkaido", "Chiba"};
+
+    for (String p : str) {
+        System.out.println(p);
+    }
+  }
+}
