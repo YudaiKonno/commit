@@ -1,0 +1,24 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int len = s.length();
+        
+        if (1 <= len && len <= 100 ){
+            String newCher;
+            newCher = (s = s.replace("A","4"));
+            newCher = (s = s.replace("E","3"));
+            newCher = (s = s.replace("I","1"));
+            newCher = (s = s.replace("G","6"));
+            newCher = (s = s.replace("O","0"));
+            newCher = (s = s.replace("S","5"));
+            newCher = (s = s.replace("Z","2"));
+            
+        System.out.println(newCher);
+        } 
+        
+    }
+}
