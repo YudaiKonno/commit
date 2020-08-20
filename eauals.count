@@ -1,0 +1,18 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        String[] str = sc.nextLine().split("");//ArrayList　strにスプリットメソッドで要素格納   
+        
+        int cnt = 0;
+        for (String s : str){  //拡張for文で配列を変数sに格納
+            if(a.equals(s)){  //equalsメソッドは文字の一致を判別（評価）する
+            cnt++;
+            }
+        } 
+        System.out.println(cnt);
+    }
+}
