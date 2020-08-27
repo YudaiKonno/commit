@@ -9,8 +9,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.nextLine();
-        String s = sc.nextLine();
-        
-        System.out.println(s.substring(n-1,n)+" "+s.substring(n,n+1));
+        String s[] = sc.nextLine().split("");
+            if (n < s.length){
+                
+        System.out.println(s[n - 1]+" "+s[n]);
+            } 
     }
 }
